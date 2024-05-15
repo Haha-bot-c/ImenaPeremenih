@@ -1,0 +1,16 @@
+    int playerHealth = 100;
+    int playerScore = 0;
+    GameState gameState = GameState.InProgress;
+    Vector3 playerPosition = new Vector3(0, 0, 0);
+    GameObject[] gameObjects;
+    bool showUI = true;
+    int coinsCollected = 0;
+    int currentLevel = 1;
+    float playerSpeed = 5.0f;
+    Camera mainCamera;
+    enum GameState
+    {
+        InProgress,
+        Paused,
+        GameOver
+    }
